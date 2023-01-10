@@ -1,0 +1,35 @@
+.heading{
+    text-align: center;
+    color: #fff;
+    font-size: 72px;
+    line-height: 82px;
+    margin: 0 auto;
+}
+
+.about-item {
+	text-align: center;
+	background: transparent;
+	padding: 46px 10px;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	margin-bottom: 30px;
+    border: 2px solid rgba(41, 217, 240, 0.8);
+}
+
+.about-img{
+    border: 2px solid rgba(41, 217, 240, 0.1);
+    padding: 1rem;
+}
+
+.about-item h4 {
+	font-size: 22px;
+	color: #fff;
+	font-weight: 700;
+	margin-top: 33px;
+	margin-bottom: 25px;
+}
+
+.about-item p{
+    color: rgba(255,255,255, 0.7);
+}

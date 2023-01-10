@@ -1,0 +1,57 @@
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, 0.9);
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgba(255, 255, 255, 0.9);
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.heading {
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.form-input input,
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    margin: 10px 0;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.form-input button {
+    padding: 0.5rem 2rem;
+    background: transparent;
+    color: #15F5FF;
+    border: 1.5px solid #15F5FF;
+    border-radius: 121px;
+}
+
+.contact-heading {
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.contact-desc {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
