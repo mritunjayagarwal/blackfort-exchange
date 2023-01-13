@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <title>Blackfort Exchange</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/home.css">
@@ -68,6 +69,12 @@
     <main>
         <section class="hero">
             <h1 class="text-center text-white heading-3d">BLACKFORT</h1>
+            <!-- Use it like any other HTML element -->
+            <div style="height: 50vh; width: 50vh; position: absolute; margin: auto auto;">
+                <model-viewer id="shadow-intensity-demo" style="height: inherit; width: inherit"
+                    alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
+                    src="./img/logo.gltf" environment-image="./img/logo.hdr" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+            </div>
         </section>
 
         <section id="features">
@@ -87,7 +94,10 @@
                                         <h2 class="feature-heading">Client side wallet</h2>
                                     </div>
                                 </div>
-                                <p class = "mt-2 feature-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aliquid blanditiis placeat, aut quos unde dolor nihil? Hic deserunt aliquid assumenda voluptas consectetur, recusandae, cupiditate nihil, expedita velit quia excepturi?</p>
+                                <p class="mt-2 feature-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Assumenda aliquid blanditiis placeat, aut quos unde dolor nihil? Hic deserunt
+                                    aliquid assumenda voluptas consectetur, recusandae, cupiditate nihil, expedita velit
+                                    quia excepturi?</p>
                             </div>
                             <div class="feature-item">
                                 <div class="d-flex">
@@ -141,8 +151,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class = "col-lg-6 d-flex align-items-center">
-                        <img src="./img/home/features-bg.png" class = "img-fluid" alt="">
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <img src="./img/home/features-bg.png" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
@@ -308,7 +318,7 @@
                                         <p class="text-white">Price</p>
                                     </div>
                                     <div style="flex:1">
-                                        <p style = "color: rgba(255,255,255,0.7)">100C</p>
+                                        <p style="color: rgba(255,255,255,0.7)">100C</p>
                                     </div>
                                 </div>
                                 <div class="d-flex">
@@ -316,7 +326,7 @@
                                         <p class="text-white">Weight</p>
                                     </div>
                                     <div style="flex:1">
-                                        <p style = "color: rgba(255,255,255,0.7)">5000 Raah</p>
+                                        <p style="color: rgba(255,255,255,0.7)">5000 Raah</p>
                                     </div>
                                 </div>
                                 <div class="d-flex">
@@ -324,8 +334,8 @@
                                         <p class="text-white">Block Reward</p>
                                     </div>
                                     <div style="flex:1">
-                                        <p style = "color: rgba(255,255,255,0.7)">-0.0023 Lorem</p>
-                                        <p style = "color: rgba(255,255,255,0.7)">+0.023 Ipsum</p>
+                                        <p style="color: rgba(255,255,255,0.7)">-0.0023 Lorem</p>
+                                        <p style="color: rgba(255,255,255,0.7)">+0.023 Ipsum</p>
                                     </div>
                                 </div>
                                 <div class="d-flex">
@@ -333,8 +343,8 @@
                                         <p class="text-white">Daily Reward</p>
                                     </div>
                                     <div style="flex:1">
-                                        <p style = "color: rgba(255,255,255,0.7)">-0.0023 Lorem</p>
-                                        <p style = "color: rgba(255,255,255,0.7)">+0.023 Ipsum</p>
+                                        <p style="color: rgba(255,255,255,0.7)">-0.0023 Lorem</p>
+                                        <p style="color: rgba(255,255,255,0.7)">+0.023 Ipsum</p>
                                     </div>
                                 </div>
                             </div>
@@ -471,6 +481,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script>
+        (() => {
+            const modelViewer = document.querySelector('#shadow-intensity-demo');
+            const time = performance.now();
+
+            const animate = (now) => {
+                modelViewer.shadowIntensity = oscillate(0, 2, 4000, now - time);
+                requestAnimationFrame(animate);
+            };
+
+            animate();
+        })();
+    </script>
 </body>
 
 </html>
