@@ -1,4 +1,4 @@
-.hero{
+.hero {
     height: 100vh;
     background: rgba(17, 37, 68, 1);
     display: flex;
@@ -6,13 +6,22 @@
     align-items: center;
 }
 
-.heading{
-    text-align: center;
-    color: #fff;
+.heading-3d {
+    font-size: 160px;
+    line-height: 141px;
+    background: linear-gradient(90deg, rgba(43,232,237,1) 0%, rgba(29,111,158,1) 50%, rgba(43,232,237,1) 100%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.section-desc{
-    color:rgba(255,255,255, 0.7);
+.heading {
+    text-align: center;
+    color: #fff;
+    font-family: 70px;
+}
+
+.section-desc {
+    color: rgba(255, 255, 255, 0.7);
     width: 50%;
     margin: 0 auto 50px auto;
 }
@@ -20,21 +29,21 @@
 
 /* features section */
 
-.feature-item{
+.feature-item {
     width: 100%;
     padding: 1rem;
     margin: 20px 0;
     background: rgba(12, 27, 49, 1);
 }
 
-.feature-heading{
+.feature-heading {
     font-size: 22px;
     color: #fff;
     margin: 0 10px 0 15px;
 }
 
-.feature-desc{
-    color: rgba(255,255,255,0.7)
+.feature-desc {
+    color: rgba(255, 255, 255, 0.7)
 }
 
 /*---------------------
@@ -42,37 +51,37 @@
 -----------------------*/
 
 .about-item {
-	text-align: center;
-	background: transparent;
-	padding: 46px 10px;
-	height: 100%;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-	margin-bottom: 30px;
+    text-align: center;
+    background: transparent;
+    padding: 46px 10px;
+    height: 100%;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-bottom: 30px;
     border: 2px solid rgba(41, 217, 240, 0.8);
 }
 
-.about-img{
+.about-img {
     border: 2px solid rgba(41, 217, 240, 0.1);
     padding: 1rem;
 }
 
 .about-item h4 {
-	font-size: 22px;
-	color: #fff;
-	font-weight: 700;
-	margin-top: 33px;
-	margin-bottom: 25px;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 33px;
+    margin-bottom: 25px;
 }
 
-.about-item p{
-    color: rgba(255,255,255, 0.7);
+.about-item p {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 /* Reward Section */
 
-.reward-item{
+.reward-item {
     display: flex;
     background: rgba(12, 27, 49, 1);
     padding: 1rem;
@@ -80,71 +89,71 @@
     border-radius: 5px;
 }
 
-.reward-img{
+.reward-img {
     width: 100%;
     height: 100%;
 }
 
-.reward-head{
+.reward-head {
     color: #fff;
     font-size: 20px;
 }
 
-.reward-desc{
-    color: rgba(255,255,255, 0.7);
+.reward-desc {
+    color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
 }
 
-.card{
+.card {
     border: 1px solid #fff;
     width: 60%;
 }
 
-.nft-card-title{
+.nft-card-title {
     color: #fff;
     font-size: 24px;
 }
 
-.nft-card-badge{
+.nft-card-badge {
     color: #fff;
     background: #28DBF1;
     padding: 5px 10px;
     font-weight: 500;
 }
 
-.nft-card-body p{
+.nft-card-body p {
     margin: 5px 0;
 }
 
-.nft-card-body{
+.nft-card-body {
     background: rgba(3, 11, 21, 1);
 }
 
 /* NEWS Section */
 
-.news-item{
+.news-item {
     padding: 1rem;
     height: 100%;
     border: 2px solid rgba(41, 217, 240, 0.8);
 }
 
-.news-head{
+.news-head {
     color: #fff;
     font-size: 20px;
 }
 
-.news-desc{
+.news-desc {
     font-size: 14px;
-    color: rgba(255,255,255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 @media only screen and (max-width: 667px) {
 
-    .card{
+    .card {
         width: 100%;
     }
 
-    .section-desc{
+    .section-desc {
         width: 100%;
     }
 }
