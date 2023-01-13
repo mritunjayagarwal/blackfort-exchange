@@ -1,0 +1,28 @@
+.heading {
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 82px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+}
+
+.policy {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    color: #fff;
+}
+
+.policy-desc, .policy-list li {
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.policy-list{
+    margin-left: 15px;
+}

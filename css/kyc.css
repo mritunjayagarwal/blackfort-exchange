@@ -1,0 +1,16 @@
+.heading {
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 82px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+}
+
+.kyc-desc {
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
+}

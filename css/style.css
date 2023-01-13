@@ -1,28 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.container{
+.container {
     max-width: 90%;
     margin: 0 auto;
 }
 
-section{
+section {
     padding: 100px 0 50px 0;
     background: #030C16;
 }
 
 /*navbar */
 
-.navbar{
+.navbar {
     background: #030C16;
 }
 
 .navbar li a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
     color: #fff;
-    font-size: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navbar li a:hover {
@@ -30,7 +32,7 @@ section{
     text-decoration: none;
 }
 
-.contact-btn{
+.contact-btn {
     padding: 0.5rem 2rem;
     background: transparent;
     color: #15F5FF;
@@ -40,35 +42,35 @@ section{
 
 /* footer */
 
-footer{
+footer {
     background: rgba(17, 37, 68, 1);
 }
 
-.footer-wrapper{
+.footer-wrapper {
     padding: 50px 0;
 }
 
-.footer-desc{
-    color: rgba(255,255,255, 0.83);
+.footer-desc {
+    color: rgba(255, 255, 255, 0.83);
     font-size: 14px;
 }
 
-.footer-list-head{
+.footer-list-head {
     color: #fff;
     font-size: 14px;
 }
 
-.footer-list{
+.footer-list {
     list-style-type: none;
 }
 
-.footer-list li{
+.footer-list li {
     margin: 20px 0;
-    color: rgba(255,255,255, 0.75);
+    color: rgba(255, 255, 255, 0.75);
     font-size: 14px;
 }
 
-.footer-bottom{
+.footer-bottom {
     background: rgba(11, 20, 36, 1);
     padding: 10px 0;
     color: rgba(255, 255, 255, 0.83);
@@ -76,7 +78,7 @@ footer{
 
 @media only screen and (max-width: 667px) {
 
-    .navbar{
+    .navbar {
         background: #030C16;
     }
 
