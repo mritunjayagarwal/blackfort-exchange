@@ -78,10 +78,6 @@ footer {
 
 @media only screen and (max-width: 667px) {
 
-    .navbar {
-        background: #030C16;
-    }
-
     .nav-item {
         margin: 10px 0 10px -10px;
     }

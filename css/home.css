@@ -1,6 +1,7 @@
 .hero-section {
     height: 100vh;
     padding: 0;
+    overflow: hidden;
     background: url(../img/home/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -182,6 +183,16 @@
     .heading-3d {
         font-size: 60px;
         line-height: 141px;
+    }
+
+    .wave-prop {
+        width: 160vw;
+        margin-bottom: 100px;
+        height: auto;
+        position: absolute;
+        bottom: -60px;
+        left: -20vh;
+        right: 0;
     }
 
     .card {
