@@ -22,11 +22,11 @@
     line-height: 141px;
     background: linear-gradient(90deg, #21DDE1 0%, rgba(255, 255, 255, 0) 50%, #21DDE1 97%);
     background-repeat: no-repeat;
-    /* background-size: 80%; */
     animation: animate 3s linear;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    animation: animate 3s linear;
+    animation: animate 2s linear;
 }
 
 @keyframes animate {
