@@ -31,12 +31,12 @@
 
 @keyframes animate {
     0% {
-        background-position: -500%;
-        background-size: 80%;
+        background-position: -200%;
+        background-size: 20%;
     }
 
     100% {
-        background-position: 500%;
+        background-position: 200%;
         background-size: 100%;
     }
 }
