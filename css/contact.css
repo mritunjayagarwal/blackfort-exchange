@@ -13,6 +13,10 @@
     color: rgba(255, 255, 255, 0.9);
 }
 
+input{
+    z-index: 99 !important;
+}
+
 .heading {
     color: #fff;
     font-weight: 500;
@@ -24,7 +28,7 @@
 textarea {
     width: 100%;
     padding: 0.7rem;
-    background: transparent;
+    background: #0E1720;
     border: 1px solid rgba(255, 255, 255, 0.7);
     margin: 10px 0;
     outline: none;

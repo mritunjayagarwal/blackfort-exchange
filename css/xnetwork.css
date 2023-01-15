@@ -8,7 +8,7 @@
 
 .about-item {
 	text-align: center;
-	background: transparent;
+    background: rgba(3,12,22, 0.9);
 	padding: 46px 10px;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;

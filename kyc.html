@@ -64,26 +64,39 @@
         </nav>
     </header>
 
-    <main>
-        <section style="padding: 150px 0 50px 0">
+    <main style = "position: relative">
+        <section style="position: absolute; top: 0; bottom: 0; right: 0; left: 0;z-index: 0; background: transparent">
+            <div class="animation-wrapper"> <canvas id="animation-visual-canvas" width="1920" height="1000"></canvas>
+            </div>
+        </section>
+        <section style="padding: 150px 0 50px 0; z-index: 2">
             <div class="container">
                 <h1 class="heading">AML / KYC Policy</h1>
 
-                <div class = "mt-5">
-                    <p class = "kyc-desc">
-                        BlackFort Tech Estonia OÜ Reg. No. 14883859, Harju maakond, Tallinn, Kesklinna linnaosa, Uus-Tatari tn 25, 10134, VIRTUAL CURENCY SERVICE PROVIDER.
+                <div class="mt-5">
+                    <p class="kyc-desc">
+                        BlackFort Tech Estonia OÜ Reg. No. 14883859, Harju maakond, Tallinn, Kesklinna linnaosa,
+                        Uus-Tatari tn 25, 10134, VIRTUAL CURENCY SERVICE PROVIDER.
                     </p>
 
-                    <p class = "kyc-desc">
-                        Internal control system documents for ensuring the compliance with the control requirements of the European Union AML/CFT and international Sanctions. Issued in accordance with the European Union 4th AML Directive (EU) 2015/849, with regard also to the requirements according to the European Union 5th AML Directive (EU) 2018/843
+                    <p class="kyc-desc">
+                        Internal control system documents for ensuring the compliance with the control requirements of
+                        the European Union AML/CFT and international Sanctions. Issued in accordance with the European
+                        Union 4th AML Directive (EU) 2015/849, with regard also to the requirements according to the
+                        European Union 5th AML Directive (EU) 2018/843
                     </p>
 
-                    <p class = "kyc-desc">
-                        Annexes in the KYC/AML policy, lays out the specific procedures, details and documents that we may request from our clients and/ or partners to comply with our legal obligations to ensure that EU KYC and AML policies are followed and observed by all parties that are using our Services. Please note that the actual formatting of the procedure may or may not look different to the contained forms in order to tailor it to the specified requests for information that may be needed when using our Services.
+                    <p class="kyc-desc">
+                        Annexes in the KYC/AML policy, lays out the specific procedures, details and documents that we
+                        may request from our clients and/ or partners to comply with our legal obligations to ensure
+                        that EU KYC and AML policies are followed and observed by all parties that are using our
+                        Services. Please note that the actual formatting of the procedure may or may not look different
+                        to the contained forms in order to tailor it to the specified requests for information that may
+                        be needed when using our Services.
                     </p>
                 </div>
 
-                <div class = "text-center mt-5">
+                <div class="text-center mt-5">
                     <a href="./contact.html" style="color: #fff">
                         <button type="button" class="px-5 btn pt-2 contact-btn">
                             Download
@@ -167,6 +180,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

@@ -79,14 +79,14 @@
     margin: 0 10px 0 15px;
 }
 
-.feature-img{
+.feature-img {
     border: 2px solid rgba(41, 217, 240, 0.1);
     padding: 1rem;
     border-radius: 8px;
 }
 
 .feature-desc {
-    color: rgba(255, 255, 255, 0.7)
+    color: rgba(255, 255, 255, 0.7);
 }
 
 /*---------------------
@@ -120,6 +120,31 @@
 
 .about-item p {
     color: rgba(255, 255, 255, 0.7);
+}
+
+/* Usecases Section */
+
+.usecase-model-div {
+    width: 50vw;
+    height: 50vh;
+    margin: auto auto;
+}
+
+.pointer {
+    position: absolute;
+}
+
+.pointer1 {
+    top: 50%;
+}
+
+.pointer-content {
+    width: 70%;
+}
+
+.pointer-img {
+    width: 80%;
+    margin-left: 40px;
 }
 
 /* Reward Section */
