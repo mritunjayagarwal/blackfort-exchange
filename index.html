@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <title>Blackfort Exchange</title>
     <link rel="stylesheet" href="./css/style.css">
@@ -19,7 +20,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top py-3 m-0" data-aos="fade-down" data-aos-delay="800">
+        <nav class="navbar navbar-expand-lg fixed-top py-3 m-0">
             <div class="container">
                 <!-- Container wrapper -->
                 <!-- Navbar brand -->
@@ -71,12 +72,12 @@
         <section class="hero-section">
             <div class="hero">
                 <h1 class="text-center text-white heading-3d" data-text="BLACKFORT">BLACKFORT</h1>
-                <!-- <div class="model-div">
+                <div class="model-div" data-aos="zoom-in" data-aos-delay="2000" data-aos-duration="2000">
                     <model-viewer id="shadow-intensity-demo" class="logo-model"
                         alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
                         src="./img/logo.gltf" environment-image="./img/logo.hdr" shadow-intensity="1" auto-rotate
                         touch-action="pan-y"></model-viewer>
-                </div> -->
+                </div>
             </div>
 
             <img src="./img/home/wave.svg" class="wave-prop" alt="">
@@ -336,7 +337,7 @@
             </div>
         </section> -->
 
-        <section id="reward" style = "position: relative">
+        <section id="reward" style="position: relative">
             <div class="animation-wrapper"> <canvas id="animation-visual-canvas" width="1920" height="1000"></canvas>
             </div>
             <div class="container">
@@ -582,6 +583,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="./js/main.js"></script>
@@ -681,6 +683,9 @@
         };
         requestAnimationFrame(update);
 
+    </script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
