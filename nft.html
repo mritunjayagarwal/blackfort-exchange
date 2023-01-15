@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Blackfort Exchange</title>
     <link rel="stylesheet" href="./css/style.css">
@@ -64,8 +64,12 @@
         </nav>
     </header>
 
-    <main>
-        <section id="nft" style = "padding: 150px 0 50px 0">
+    <main style="position: relative">
+        <section style="position: absolute; top: 0; bottom: 0; right: 0; left: 0;z-index: 0; background: transparent">
+            <div class="animation-wrapper"> <canvas id="animation-visual-canvas" width="1920" height="1000"></canvas>
+            </div>
+        </section>
+        <section id="nft" style="padding: 150px 0 50px 0">
             <div class="container">
                 <h1 class="heading text-white text-center">BlackFort Genesis Knights NFTs</h1>
                 <p class="section-desc">We’re glad to introduce you our Exclusive Genesis NFT collection! Only 500 NFTs
@@ -462,6 +466,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

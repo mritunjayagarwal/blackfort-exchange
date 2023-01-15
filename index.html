@@ -337,7 +337,9 @@
             </div>
         </section> -->
 
-        <section id="reward">
+        <section id="reward" style = "position: relative">
+            <div class="animation-wrapper"> <canvas id="animation-visual-canvas" width="1920" height="1000"></canvas>
+            </div>
             <div class="container">
                 <h1 class="heading text-center">About Reward</h1>
                 <p class="section-desc text-center">Why Blackfort when there are so many other options. Check for
@@ -583,6 +585,7 @@
         crossorigin="anonymous"></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="./js/main.js"></script>
     <script>
         (() => {
             const modelViewer = document.querySelector('#shadow-intensity-demo');
