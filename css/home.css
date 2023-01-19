@@ -1,3 +1,9 @@
+@property --a{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+  }
+
 .hero-section {
     height: 100vh;
     padding: 0;
@@ -117,14 +123,30 @@
     margin-bottom: 30px;
     backdrop-filter: blur(6px);
     border: 1px solid;
-    /* background: linear-gradient(130.31deg, #28DBF1 34.17%, #0E3464 58.12%); */
-    border-image: linear-gradient(130.31deg, #28DBF1 34.17%, #0E3464 58.12%) 50;
-
+    --a:131deg;
+    border-image: linear-gradient(131deg, #28DBF1 34.17%, #0E3464 58.12%) 50;
+    transition: 0.5s;
 }
+
+.about-item:hover{
+    margin-top: -10px;
+    border-image: linear-gradient(var(--a), #28DBF1 34.17%, #0E3464 58.12%) 50;
+    animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+    100% {--a:491deg}
+}
+
+/* .about-item:hover{
+    margin-top: -10px;
+    transform: rotate(-360deg);
+} */
 
 .about-img {
     border: 2px solid rgba(41, 217, 240, 0.1);
     padding: 1rem;
+    z-index: 5;
 }
 
 .about-item h4 {
