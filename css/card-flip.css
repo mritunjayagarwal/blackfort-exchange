@@ -1,0 +1,29 @@
+.content {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  background: transparent;
+}
+
+.card{
+    border: none;
+    background: transparent;
+    margin: auto 0;
+    height: 50%;
+}
+
+.card:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  margin: auto auto;
+  backface-visibility: hidden;
+  border: 1px solid #fff;
+}
+
+.back {
+  transform: rotateY( 180deg );
+}
