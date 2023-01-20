@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/glightbox.css">
+    <title>Blackfort Exchange</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fees.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top py-3 m-0" data-aos="fade-down" data-aos-delay="800">
+            <div class="container">
+                <!-- Container wrapper -->
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="/">
+                    <img src="./img/logo 1.png" class="img-fluid" alt=""></a>
+
+                <!-- Toggle button -->
+                <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse text-white" id="navbarText">
+                    <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="/" class="px-3 pt-2 btn-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./xnetwork.html" class="px-3 pt-2 btn-link">
+                                BlackFort X Network
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./nft.html" class="px-3 pt-2 btn-link">
+                                NFT’s
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="./contact.html" style="color: #fff">
+                                <button type="button" class="px-5 btn pt-2 contact-btn">
+                                    Contact Us
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Collapsible wrapper -->
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main style = "position: relative; background: url(./img/flat-bg3.svg) no-repeat; background-size: cover;overflow: hidden">
+        <img src = "./img/ball.png" class = "img-fluid ball" style = "z-index: 0" />
+        <section id="fees" style = "z-index: 5; position: sticky">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="heading">FEES</h1>
+                </div>
+                <div class = "mt-5" style = "background: rgba(2, 7, 15, 1); width: 80%;margin: 0 auto; padding: 30px 50px 0px 50px;border-radius: 25px">
+                    <div style = "overflow-x: auto;">
+                        <div class="filter d-flex" style = "justify-content:space-evenly;">
+                            <div class="wallet text-center py-3 px-3" data-name='.first'>
+                                Wallet Fee
+                            </div>
+                            <div class="exchange text-center py-3 px-3" data-name='.second'>
+                                Exchange Services
+                            </div>
+                            <div class="custom text-center py-3 px-3" data-name='.third'>
+                                Custom Business Requests
+                            </div>
+                            <div class="b2b text-center py-3 px-3" data-name='.fourth'>
+                                B2B
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-3">
+                        <div id="display">
+                            <div class="row grid">
+                                <div class="col-lg-12 col-md-12 text-center grid-item first mb-3">
+                                    <table class="table p-0 m-0" style = "color: rgba(255, 255, 255, 0.7);">
+                                        <tbody>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">Download and Wallet Use</th>
+                                            <td style = "text-align: right">Free</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">Sending</th>
+                                            <td style = "text-align: right">Blockchain Fees only</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">Receiving</th>
+                                            <td style = "text-align: right">Blockchain Fees only</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">xrp wallet activation</th>
+                                            <td style = "text-align: right">Network Fees only (20 xrp)</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">ERC20 Token Fee Sending</th>
+                                            <td style = "text-align: right">Network Fees only (Ethereum required)</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">Smartcontract Interaction (ETH)</th>
+                                            <td style = "text-align: right">Network Fees only (Ethereum required for any action)</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                                <div class="col-lg-12 col-md-12 text-center grid-item second mb-3">
+                                    <table class="table p-0 m-0" style = "color: rgba(255, 255, 255, 0.7);">
+                                        <tbody>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">Download and Wallet Use</th>
+                                            <td style = "text-align: right">Free</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">Sending</th>
+                                            <td style = "text-align: right">Blockchain Fees only</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">Receiving</th>
+                                            <td style = "text-align: right">Blockchain Fees only</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">xrp wallet activation</th>
+                                            <td style = "text-align: right">Network Fees only (20 xrp)</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">ERC20 Token Fee Sending</th>
+                                            <td style = "text-align: right">Network Fees only (Ethereum required)</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">Smartcontract Interaction (ETH)</th>
+                                            <td style = "text-align: right">Network Fees only (Ethereum required for any action)</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                                <div class="col-lg-12 col-md-12 text-center grid-item third mb-3">
+                                    <table class="table p-0 m-0" style = "color: rgba(255, 255, 255, 0.7);">
+                                        <tbody>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">Download and Wallet Use</th>
+                                            <td style = "text-align: right">Free</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">Sending</th>
+                                            <td style = "text-align: right">Blockchain Fees only</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">Receiving</th>
+                                            <td style = "text-align: right">Blockchain Fees only</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">xrp wallet activation</th>
+                                            <td style = "text-align: right">Network Fees only (20 xrp)</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">ERC20 Token Fee Sending</th>
+                                            <td style = "text-align: right">Network Fees only (Ethereum required)</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">Smartcontract Interaction (ETH)</th>
+                                            <td style = "text-align: right">Network Fees only (Ethereum required for any action)</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                                <div class="col-lg-12 col-md-12 text-center grid-item fourth mb-3">
+                                    <table class="table p-0 m-0" style = "color: rgba(255, 255, 255, 0.7);">
+                                        <tbody>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">Download and Wallet Use</th>
+                                            <td style = "text-align: right">Free</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">Sending</th>
+                                            <td style = "text-align: right">Blockchain Fees only</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">Receiving</th>
+                                            <td style = "text-align: right">Blockchain Fees only</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">xrp wallet activation</th>
+                                            <td style = "text-align: right">Network Fees only (20 xrp)</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">ERC20 Token Fee Sending</th>
+                                            <td style = "text-align: right">Network Fees only (Ethereum required)</td>
+                                          </tr>
+                                          <tr style = "border-top: 2px solid rgba(84, 105, 175, 0.4);">
+                                            <th style = "text-align: left" scope="row">Smartcontract Interaction (ETH)</th>
+                                            <td style = "text-align: right">Network Fees only (Ethereum required for any action)</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <img src="./img/logo 1.png" class="img-fluid" alt="">
+                        <div class="footer-desc pt-3">
+                            <p>BlackFort group of companies DO NOT PROVIDE ANY financial services,
+                                investment advice or any type of investment services.</p>
+                            <p>
+                                BlackFort Wallet & Exchange by Blackfort Tech Estonia OÜ. Registered address
+                                Lõkke Tn 4, 10122,
+                                Tallinn, Harju county, Estonia </p>
+
+                            <p>BlackFort Exchange Network by BlackFort INC,
+                                P.O.Box 4342, Road Town,Tortola, British Virgin Islands
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h5 class="footer-list-head">Links</h5>
+
+                                <ul class="footer-list">
+                                    <li>Home</li>
+                                    <li>Downloads</li>
+                                    <li>Referals</li>
+                                    <li>Home</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <h5 class="footer-list-head">Company</h5>
+
+                                <ul class="footer-list">
+                                    <li>Terms Of Services</li>
+                                    <li>Privacy & Policies</li>
+                                    <li>KML & KYC Policy</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <h5 class="footer-list-head">Learn & Support</h5>
+
+                                <ul class="footer-list">
+                                    <li>Telegram Channel</li>
+                                    <li>Medium - Blogs</li>
+                                    <li>FAQ’s & Support</li>
+                                    <li>Tutorials ( Comming Soon )</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div>
+                    <p class="my-auto">© 2020-2022 All Rights Reserved. BlackFort Group of companies.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://dlftest.netlify.app/assets/js/jquery/isotope.min.js"></script>
+    <script src="https://dlftest.netlify.app/assets/js/glightbox.js"></script>
+    <script>
+
+        const glightbox = GLightbox({
+            selector: '.glightbox'
+        });
+
+        $('.wallet').click();
+        
+        setTimeout(function () {
+            $('.wallet').click()
+        }, '1000')
+
+        $('.wallet').click(function () {
+            $('.exchange').css({ "border-bottom": "none", "color": "rgba(255, 255, 255, 0.7)" })
+            $('.custom').css({ "border-bottom": "none", "color": "rgba(255, 255, 255, 0.7)" })
+            $('.b2b').css({ "border-bottom": "none", "color": "rgba(255, 255, 255, 0.7)" })
+            $(this).css({ "border-bottom": "2px solid #fff", "color": "#fff" });
+        })
+
+        $('.exchange').click(function () {
+            $('.wallet').css({ "border-bottom": "none", "color": "rgba(255, 255, 255, 0.7)" })
+            $('.custom').css({ "border-bottom": "none", "color": "rgba(255, 255, 255, 0.7)" })
+            $('.b2b').css({ "border-bottom": "none", "color": "rgba(255, 255, 255, 0.7)" })
+            $(this).css({ "border-bottom": "2px solid #fff", "color": "#fff" });
+        })
+
+        $('.custom').click(function () {
+            $('.exchange').css({ "border-bottom": "none", "color": "rgba(255, 255, 255, 0.7)" })
+            $('.wallet').css({ "border-bottom": "none", "color": "rgba(255, 255, 255, 0.7)" })
+            $('.b2b').css({ "border-bottom": "none", "color": "rgba(255, 255, 255, 0.7)" })
+            $(this).css({ "border-bottom": "2px solid #fff", "color": "#fff" });
+        })
+
+        $('.b2b').click(function () {
+            $('.exchange').css({ "border-bottom": "none", "color": "rgba(255, 255, 255, 0.7)" })
+            $('.custom').css({ "border-bottom": "none", "color": "rgba(255, 255, 255, 0.7)" })
+            $('.wallet').css({ "border-bottom": "none", "color": "rgba(255, 255, 255, 0.7)" })
+            $(this).css({ "border-bottom": "2px solid #fff", "color": "#fff" });
+        })
+
+        var $grid = $('.grid').isotope({
+            filter: $('.first'),
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows',
+            getSortData: {
+                name: function (element) {
+                    return $(element).text();
+                }
+            }
+        });
+        $('.filter div').on("click", function () {
+            var value = $(this).attr('data-name');
+            $grid.isotope({
+                filter: value
+            });
+            $('.filter div').removeClass('active');
+            $(this).addClass('active');
+        })
+    </script>
+</body>
+
+</html>
