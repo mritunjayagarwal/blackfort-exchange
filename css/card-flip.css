@@ -27,3 +27,10 @@
 .back {
   transform: rotateY( 180deg );
 }
+
+@media only screen and (max-width: 667px) {
+
+  .content{
+    height: 650px;
+  }
+}

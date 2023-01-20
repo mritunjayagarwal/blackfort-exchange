@@ -19,6 +19,8 @@ body {
 
 section {
     padding: 100px 0 50px 0;
+    overflow-x: hidden !important;
+    overflow-y: auto;
 }
 
 /*navbar */
@@ -74,8 +76,12 @@ footer {
 
 .footer-list li {
     margin: 20px 0;
+}
+
+.footer-list li a{
     color: rgba(255, 255, 255, 0.75);
     font-size: 14px;
+    text-decoration: none;
 }
 
 .footer-bottom {

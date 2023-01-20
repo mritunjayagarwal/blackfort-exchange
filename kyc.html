@@ -16,7 +16,8 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top py-3 m-0" data-aos="fade-down" data-aos-delay="800">
+        <nav class="navbar navbar-expand-lg fixed-top py-3 m-0" data-aos="fade-down" data-aos-delay="2300"
+            data-aos-duration="500">
             <div class="container">
                 <!-- Container wrapper -->
                 <!-- Navbar brand -->
@@ -47,12 +48,17 @@
                                 NFT’s
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="./nft.html" class="px-3 pt-2 btn-link">
+                                Contact Us
+                            </a>
+                        </li>
                     </ul>
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a href="./contact.html" style="color: #fff">
                                 <button type="button" class="px-5 btn pt-2 contact-btn">
-                                    Contact Us
+                                    BXN Blockchain
                                 </button>
                             </a>
                         </li>
@@ -64,12 +70,12 @@
         </nav>
     </header>
 
-    <main style = "position: relative; overflow: hidden">
-        <img src = "./img/ball.png" style = "position: absolute; top: 100px; left: -10%; height: 80%; width: auto;" />
-        <section style="position: absolute; top: 0; bottom: 0; right: 0; left: 0;z-index: 0; background: transparent">
+    <main style = "position: relative; overflow: hidden; background: url(./img/flat-bg3.svg) no-repeat; background-size: cover;">
+        <img src = "./img/ball.png" class = "img-fluid ball" />
+        <!-- <section style="position: absolute; top: 0; bottom: 0; right: 0; left: 0;z-index: 0; background: transparent">
             <div class="animation-wrapper"> <canvas id="animation-visual-canvas" width="1920" height="1000"></canvas>
             </div>
-        </section>
+        </section> -->
         <section style="padding: 150px 0 50px 0; z-index: 2">
             <div class="container">
                 <h1 class="heading">AML / KYC Policy</h1>
@@ -133,29 +139,29 @@
                                 <h5 class="footer-list-head">Links</h5>
 
                                 <ul class="footer-list">
-                                    <li>Home</li>
-                                    <li>Downloads</li>
-                                    <li>Referals</li>
-                                    <li>Home</li>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="download.html">Downloads</a></li>
+                                    <li><a href="referral.html">Referrals</a></li>
+                                    <li><a href="fees.html">Fees</a></li>
                                 </ul>
                             </div>
                             <div class="col-lg-4">
                                 <h5 class="footer-list-head">Company</h5>
 
                                 <ul class="footer-list">
-                                    <li>Terms Of Services</li>
-                                    <li>Privacy & Policies</li>
-                                    <li>KML & KYC Policy</li>
+                                    <li><a href="terms.html">Terms Of Services</a></li>
+                                    <li><a href="privacy.html">Privacy & Policies</a></li>
+                                    <li><a href="kyc.html">KML & KYC Policy</a></li>
                                 </ul>
                             </div>
                             <div class="col-lg-4">
                                 <h5 class="footer-list-head">Learn & Support</h5>
 
                                 <ul class="footer-list">
-                                    <li>Telegram Channel</li>
-                                    <li>Medium - Blogs</li>
-                                    <li>FAQ’s & Support</li>
-                                    <li>Tutorials ( Comming Soon )</li>
+                                    <li><a href="#">Telegram Channel</a></li>
+                                    <li><a href="#">Medium - Blogs</a></li>
+                                    <li><a href="#">FAQ’s & Support</a></li>
+                                    <li><a href="#">Tutorials ( Comming Soon )</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -182,6 +188,15 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 50) {
+                $('.navbar').css('background', '#030C16');
+            } else {
+                $('.navbar').css('background', 'transparent');
+            }
+        });
+    </script>
 </body>
 
 </html>
