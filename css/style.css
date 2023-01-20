@@ -1,10 +1,12 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     max-width: 100vw;
     overflow-x: hidden;
     overflow-y: auto;
@@ -103,6 +105,27 @@ footer {
     opacity: 0.6;
     z-index: 1
 }
+
+/* Ball Animation */
+
+.ball {
+    position: absolute;
+    top: 100px;
+    left: -200px;
+    /* filter: blur(3px); */
+    animation: spinning-circle 100s infinite linear;
+}
+
+@-webkit-keyframes spinning-circle {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
 
 @media only screen and (max-width: 667px) {
 

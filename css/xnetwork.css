@@ -1,3 +1,10 @@
+@property --a{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+
 .heading{
     text-align: center;
     color: #fff;
@@ -10,11 +17,21 @@
 	text-align: center;
     background: rgba(3,12,22, 0.9);
 	padding: 46px 10px;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
 	margin-bottom: 30px;
-    border: 2px solid rgba(41, 217, 240, 0.8);
+    border: 1px solid;
+    --a:131deg;
+    border-image: linear-gradient(131deg, #28DBF1 34.17%, #0E3464 58.12%) 50;
+    transition: 0.5s;
+}
+
+.about-item:hover{
+    transform: scale(1.01);
+    border-image: linear-gradient(var(--a), #28DBF1 34.17%, #0E3464 58.12%) 50;
+    animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+    100% {--a:491deg}
 }
 
 .about-img{

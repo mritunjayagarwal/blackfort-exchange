@@ -280,3 +280,24 @@
         width: 100%;
     }
 }
+
+/* ball animation */
+
+.ball-right {
+    position: absolute;
+    top: 100px;
+    right: -200px;
+    /* filter: blur(3px); */
+    animation: spinning-circle 100s infinite linear;
+}
+
+@-webkit-keyframes spinning-circle {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
