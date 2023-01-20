@@ -629,7 +629,7 @@
     <script>
         particlesJS("particles-js", {
             particles: {
-                number: { value: 400, density: { enable: true, value_area: 800 } },
+                number: { value: 50, density: { enable: true, value_area: 800 } },
                 color: { value: "#fff" },
                 shape: {
                     type: "circle",
@@ -685,9 +685,9 @@
         var count_particles, stats, update;
         stats = new Stats();
         stats.setMode(0);
-        stats.domElement.style.position = "absolute";
-        stats.domElement.style.left = "0px";
-        stats.domElement.style.top = "0px";
+        // stats.domElement.style.position = "absolute";
+        // stats.domElement.style.left = "0px";
+        // stats.domElement.style.top = "0px";
         document.body.appendChild(stats.domElement);
         count_particles = document.querySelector(".js-count-particles");
         update = function () {
