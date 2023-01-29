@@ -24,8 +24,8 @@
 }
 
 .heading-3d {
-    font-size: 160px;
-    line-height: 141px;
+    font-size: 200px;
+    line-height: 181px;
     background: linear-gradient(90deg, #21DDE1 0%, rgba(255, 255, 255, 0) 50%, #21DDE1 97%);
     background-repeat: no-repeat;
     animation: animate 3s linear;
