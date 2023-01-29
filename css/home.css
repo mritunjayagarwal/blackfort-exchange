@@ -35,6 +35,10 @@
     animation: animate 2s linear;
 }
 
+.animate-round{
+    animation: spinning-circle 150s infinite linear;
+}
+
 @keyframes animate {
     0% {
         background-position: -200%;
